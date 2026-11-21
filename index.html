@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ارتقاء">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="css/style.css">
+<title>ارتقاء</title>
+</head>
+<body>
+<header><h1>ارتقاء</h1><small>ارتقِ بذكرك، واطمئن بقلبك</small></header>
+<main>
+<section id="home" class="tab active"><h2>الرئيسية</h2><p id="today"></p><p>رحلتك اليوم: <b id="jp">0</b> / <span id="jt">0</span></p></section>
+<section id="quran" class="tab"><h2>القرآن</h2><p>المرحلة القادمة: بيانات القرآن من مصدر موثق.</p></section>
+<section id="adhkar" class="tab"><h2>الأذكار</h2><div id="adhkarList"></div></section>
+<section id="tasbeeh" class="tab"><h2>المسبحة</h2>
+<select id="tsel"></select>
+<button id="tbtn" class="big">0</button>
+<button id="treset">تصفير</button></section>
+<section id="journey" class="tab"><h2>رحلتي</h2><p class="note">علّم بنفسك فقط، التطبيق لا يسجّل عبادة تلقائيًا.</p><ul id="jlist"></ul></section>
+</main>
+<nav id="nav"></nav>
+<script src="js/database.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/adhkar.js"></script>
+<script src="js/tasbeeh.js"></script>
+<script src="js/daily-journey.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
