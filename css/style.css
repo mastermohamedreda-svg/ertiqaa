@@ -1,0 +1,187 @@
+
+/* ERTIQAA - Islamic App Design */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #176b50;
+  --dark-green: #104b3b;
+  --gold: #d6ad55;
+  --cream: #fffaf0;
+  --white: #ffffff;
+  --text: #263d34;
+  --shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  direction: rtl;
+  background: linear-gradient(145deg, #e7f4eb, #fff9eb);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #104b3b, #238365);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+  border-bottom: 5px solid var(--gold);
+  border-radius: 0 0 28px 28px;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 38px;
+  margin: 0 0 12px;
+  color: #f5d88d;
+}
+
+header small {
+  font-size: 16px;
+  color: #fff;
+}
+
+main {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+.tab {
+  display: none;
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #e5d6ae;
+  box-shadow: var(--shadow);
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab h2 {
+  color: var(--green);
+  font-size: 25px;
+  border-right: 5px solid var(--gold);
+  padding-right: 12px;
+  margin-top: 0;
+}
+
+.tab p {
+  line-height: 2;
+  font-size: 17px;
+}
+
+button, select {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 22px;
+  font-size: 16px;
+}
+
+button {
+  background: var(--green);
+  color: white;
+  transition: .2s;
+}
+
+button:hover {
+  background: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+button.big {
+  display: block;
+  margin: 25px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #238365, #104b3b);
+  border: 7px solid #e8cc80;
+  font-size: 35px;
+  box-shadow: var(--shadow);
+}
+
+#treset {
+  background: #b58b38;
+}
+
+select {
+  background: #f4f5e9;
+  color: var(--dark-green);
+  border: 1px solid #d6ad55;
+  width: 100%;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+#nav button {
+  background: white;
+  color: var(--green);
+  border: 1px solid #d6ad55;
+  box-shadow: var(--shadow);
+}
+
+#nav button.active,
+#nav button[aria-current="page"] {
+  background: var(--green);
+  color: white;
+}
+
+#jlist {
+  list-style: none;
+  padding: 0;
+}
+
+#jlist li {
+  background: #edf6ef;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+}
+
+.note {
+  background: #fff6df;
+  border-right: 4px solid var(--gold);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .tab {
+    padding: 18px;
+  }
+
+  #nav {
+    gap: 6px;
+  }
+
+  #nav button {
+    padding: 11px;
+    font-size: 14px;
+  }
+}
